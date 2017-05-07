@@ -1,0 +1,952 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.estadistica.israel.estadistica.EstadisticaActivity"
+    android:weightSum="1"
+    android:gravity="center">
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutNumeros"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDorsalNombre"
+        android:layout_width="1045dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bordefinalarriba">
+
+        <TextView
+            android:id="@+id/dorsal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+
+            android:textColor="#ff000000"
+            android:textSize="65sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+
+            android:textColor="#ff000000"
+            android:textSize="65sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTiros2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tiros2"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="TIROS DE 2"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTiros3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tiros3"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="TIROS DE 3"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingBottom="7sp"
+                android:paddingTop="7sp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTiros1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tiros1"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:text="TIROS DE 1"
+                android:textColor="#ff000000"
+                android:textIsSelectable="false"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/rd"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="RD"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"/>
+
+
+
+            <TextView
+                android:id="@+id/RO"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="RO"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"/>
+
+            <TextView
+                android:id="@+id/rebotesTotales"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="RT"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAsist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/asist"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="A"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/br"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="BR"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/perd"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="BP"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTRea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/treali"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="TC"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tr"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="TR"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/fc"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="FC"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/fr"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="FR"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bordefinalarriba">
+
+            <TextView
+                android:id="@+id/val"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="V"
+                android:textColor="#ff000000"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutDosPuntos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/bordeizquierdaabajoarriba">
+
+        <TextView
+            android:id="@+id/anotadosDe2text"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/cero"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingLeft="7dp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+
+            <TextView
+                android:id="@+id/slash"
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="/"
+                android:textColor="#ff000000"
+                android:textSize="25sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp" />
+
+        <TextView
+            android:id="@+id/totalTirosDe2"
+            android:layout_width="30sp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/porcAciertoDe2"
+            android:layout_width="85sp"
+            android:layout_height="wrap_content"
+            android:width="25dp"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/bordeizquierdaabajoarriba"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTresPuntos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bordeizquierdaabajoarriba">
+
+        <TextView
+            android:id="@+id/anotadosDe3Text"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingLeft="7dp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="/"
+                android:textColor="#ff000000"
+                android:textSize="25sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp" />
+
+            <TextView
+            android:id="@+id/totalTirosDe3"
+            android:layout_width="30sp"
+            android:layout_height="wrap_content"
+                android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/porcAciertoDe3"
+            android:layout_width="85sp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textIsSelectable="false"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="7sp"
+            android:background="@drawable/bordeizquierdaabajoarriba"
+            android:paddingBottom="7sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutUnPuntos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bordeizquierdaabajoarriba">
+
+        <TextView
+            android:id="@+id/anotadosDe1Text"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textIsSelectable="false"
+            android:textSize="25sp"
+            android:paddingLeft="7dp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp"
+            android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="/"
+                android:textColor="#ff000000"
+                android:textSize="25sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp" />
+
+            <TextView
+            android:id="@+id/totalTirosDe1"
+            android:layout_width="30sp"
+            android:layout_height="wrap_content"
+                android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+                android:paddingTop="7sp"
+                android:paddingBottom="7sp"
+                android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/porcAciertoDe1"
+            android:layout_width="85sp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/bordeizquierdaabajoarriba"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRebotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bordeizquierdaabajoarriba">
+
+        <TextView
+            android:id="@+id/rebotesDefensivosText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+
+
+
+        <TextView
+            android:id="@+id/rebotesOfensivosText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingTop="7sp"
+            android:background="@drawable/bordeizquierdaabajoarriba"
+            android:paddingBottom="7sp" />
+
+        <TextView
+            android:id="@+id/rebotesTotalesText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:background="@drawable/bordeizquierdaabajoarriba"
+            android:textSize="25sp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAsistencias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bordeizquierdaabajoarriba">
+        <TextView
+            android:id="@+id/asistenciasText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRecuperaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bordeizquierdaabajoarriba">
+
+        <TextView
+            android:id="@+id/recuperacionesText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPerdidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bordeizquierdaabajoarriba">
+
+        <TextView
+            android:id="@+id/perdidasText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTapRealizados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bordeizquierdaabajoarriba">
+
+        <TextView
+            android:id="@+id/taponesRealizadosText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTapRecibidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bordeizquierdaabajoarriba">
+
+        <TextView
+            android:id="@+id/taponesRecibidosText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFaltasCometidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bordeizquierdaabajoarriba">
+
+        <TextView
+            android:id="@+id/faltasCometidasText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFaltasRecibidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bordeizquierdaabajoarriba">
+
+        <TextView
+            android:id="@+id/faltasRecibidasText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutValoracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bordefinal">
+
+        <TextView
+            android:id="@+id/valoracionText"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp"
+            android:paddingTop="7sp"
+            android:paddingBottom="7sp" />
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/aciertoDe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="acierto" />
+
+        <Button
+            android:id="@+id/falloDe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fallo" />
+
+        <Button
+            android:id="@+id/aciertoDe3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="acierto" />
+
+        <Button
+            android:id="@+id/falloDe3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fallo" />
+
+        <Button
+            android:id="@+id/aciertoDe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="acierto" />
+
+        <Button
+            android:id="@+id/falloDe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fallo" />
+
+        <Button
+            android:id="@+id/rebotesDefensivos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RD" />
+
+        <Button
+            android:id="@+id/rebotesOfensivos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RO" />
+
+        <Button
+            android:id="@+id/asistencias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asis" />
+
+        <Button
+            android:id="@+id/recuperaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BR" />
+
+        <Button
+            android:id="@+id/perdidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BP" />
+
+        <Button
+            android:id="@+id/taponesRealizados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TapR" />
+
+        <Button
+            android:id="@+id/taponesRecibidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TapRec" />
+
+        <Button
+            android:id="@+id/faltasCometidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FC" />
+
+        <Button
+            android:id="@+id/faltasRecibidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FR" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/puntosAnotados"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gridView"
+        android:id="@+id/button"
+        android:onClick="pasarListview"
+        android:layout_gravity="right" />
+
+
+</LinearLayout>

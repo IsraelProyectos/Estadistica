@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/relativo"
+    tools:context="com.estadistica.israel.estadistica.JugadoresEquiposNuevosActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce un dorsal:"
+        android:id="@+id/txtViewDorsal"
+        android:textColor="#ff000000"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/introducirDorsal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:typeface="serif"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="42dp"
+        android:layout_height="30dp"
+        android:inputType="number"
+        android:hint="Dorsal"
+        android:id="@+id/introducirDorsal"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/introducirNombre"
+        android:layout_alignStart="@+id/introducirNombre"
+        android:textSize="10sp"
+        android:layout_marginLeft="30dp"
+        android:typeface="serif" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout4">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce un nombre:"
+        android:id="@+id/textView"
+        android:textColor="#ff000000"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:hint="Nombre de jugador"
+        android:maxLength="50"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:id="@+id/introducirNombre"
+        android:textSize="10sp"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:typeface="serif" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout5"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/linearLayout4"
+        android:layout_toEndOf="@+id/linearLayout4">
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Ir a estadistica"
+        android:id="@+id/botonEmpezarEstadis"
+        android:onClick="pasarActividad2"
+        android:typeface="serif"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnCrearBoton"
+        android:layout_alignEnd="@+id/btnCrearBoton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:id="@+id/btnCrearBoton"
+        android:typeface="serif"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout6"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escoje una camiseta"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/spinner_conListadoPersonalizado"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:layout_alignBottom="@+id/linearLayout6"
+            android:layout_alignRight="@+id/linearLayout"
+            android:layout_alignEnd="@+id/linearLayout"
+            android:paddingLeft="28dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="basesdedatos"
+            android:id="@+id/textView5"
+            android:textColor="#ff000000"
+            android:textSize="15sp"
+            android:typeface="serif"
+
+            android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_camisetas">
+        <item>@drawable/camisetablanca</item>
+        <item>@drawable/camisetadoradovioleta</item>
+        <item>@drawable/camisetarojaamarilla</item>
+        <item>@drawable/camisetanegra</item>
+    </array>
+</resources>

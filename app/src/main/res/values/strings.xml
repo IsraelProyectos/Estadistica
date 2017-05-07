@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Estadistica</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_segunda">SegundaActivity</string>
+    <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
+    <string name="cero">0</string>
+    <string name="title_activity_listview">Listview</string>
+    <string name="title_activity_list_view">ListViewActivity</string>
+    <string name="Slash">/</string>
+    <string name="T2">T2</string>
+    <string name="T3">T3</string>
+    <string name="T1">T1</string>
+    <string name="Tanto_por_ciento">%</string>
+    <string name="Valoración">Valoración</string>
+    <string name="PuntosTotales">Puntos</string>
+    <string name="RebotesDefensivos">RD</string>
+    <string name="RebotesOfensivos">RO</string>
+    <string name="RebotesTotales">RT</string>
+    <string name="Asistencias">AS</string>
+    <string name="BalonesRobados">BR</string>
+    <string name="BalonesPerdidos">BP</string>
+    <string name="TaponesCometidos">TC</string>
+    <string name="TaponesRecibidos">TR</string>
+    <string name="FaltasCometidas">FC</string>
+    <string name="FaltasRecibidas">FR</string>
+    <string name="TextoTirosDeDos">TIROS DE 2</string>
+    <string name="TextoTirosDeTres">TIROS DE 3</string>
+    <string name="TextoTirosLibres">TIROS LIBRES</string>
+    <string name="BotonRebotesDefensivos">Rebotes Def</string>
+    <string name="BotonTaponesRealizados">Tapones Rea</string>
+    <string name="BotonFaltasCometidas">Faltas Com</string>
+    <string name="BotonBalonesRobados">Balones Rob</string>
+    <string name="BotonRebotesOfensivos">Rebotes Ofe</string>
+    <string name="BotonTaponesRecibidos">Tapones Rec</string>
+    <string name="BotonFaltasRecibidas">Faltas Rec</string>
+    <string name="BotonBalonesPerdidos">Balones Per</string>
+    <string name="BotonAsistencias">asistencias</string>
+    <string name="BotonSalir_de_aplicacion">salir aplicacion</string>
+    <string name="TextoValoracion">Valoración</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="Boton_nueva_estadistica">Nueva estadística</string>
+    <string name="Boton_listar_estadisticas_equipos">Ver estadísticas de equipos</string>
+    <string name="title_activity_equipos_hechos">EquiposHechosActivity</string>
+</resources>

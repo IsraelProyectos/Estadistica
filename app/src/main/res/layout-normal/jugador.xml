@@ -1,0 +1,1291 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        tools:context="com.estadistica.israel.estadistica.EstadisticaActivity"
+        android:id="@+id/RLjugadores">
+
+
+        <LinearLayout
+            android:id="@+id/layoutDorsalNombre"
+            android:layout_width="273.5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/bordefinalarriba"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignStart="@+id/linearLayout1">
+
+            <TextView
+                android:id="@+id/dorsal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+
+                android:textColor="#ff000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+
+                android:textColor="#ff000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutDorsalNombre"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTiros2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tiros2"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bordeizquierdaarriba"
+                    android:gravity="center"
+                    android:paddingBottom="7sp"
+                    android:paddingTop="7sp"
+                    android:text="@string/T2"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+
+                <TextView
+                    android:id="@+id/porcent2"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaarriba"
+                    android:gravity="center"
+                    android:paddingBottom="7sp"
+                    android:paddingTop="7sp"
+                    android:text="@string/Tanto_por_ciento"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+
+                <TextView
+                    android:id="@+id/tiros3"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaarriba"
+                    android:gravity="center"
+                    android:paddingBottom="7sp"
+                    android:paddingTop="7sp"
+                    android:text="@string/T3"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/porcent3"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaarriba"
+                    android:gravity="center"
+                    android:paddingBottom="7sp"
+                    android:paddingTop="7sp"
+                    android:text="@string/Tanto_por_ciento"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+
+                <TextView
+                    android:id="@+id/tiros1"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaarriba"
+                    android:gravity="center"
+                    android:paddingBottom="7sp"
+                    android:paddingTop="7sp"
+                    android:text="@string/T1"
+                    android:textColor="#ff000000"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/porcent1"
+                    android:layout_width="34.5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordefinalarriba"
+                    android:gravity="center"
+                    android:paddingBottom="7sp"
+                    android:paddingTop="7sp"
+                    android:text="@string/Tanto_por_ciento"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignStart="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_gravity="right"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutDosPuntos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bordeizquierdaabajoarriba"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/anotadosDe2text"
+                    android:layout_width="25sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/slash"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/Slash"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/totalTirosDe2"
+                    android:layout_width="25sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7sp"
+                    android:paddingTop="7sp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/porcAciertoDe2"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaabajoarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+</LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTresPuntos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bordeizquierdaabajoarriba"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/anotadosDe3Text"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/Slash"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/totalTirosDe3"
+                    android:layout_width="25sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7sp"
+                    android:paddingTop="7sp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/porcAciertoDe3"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/bordeizquierdaabajoarriba"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutUnoPuntos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordeizquierdaabajoarriba"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/anotadosDe1Text"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7sp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:textIsSelectable="false"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="5sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/Slash"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/totalTirosDe1"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/porcAciertoDe1"
+                    android:layout_width="34.5dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/bordefinalabajo"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/resto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rd"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/barraizquierdaderechaarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/RebotesDefensivos"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+
+                <TextView
+                    android:id="@+id/RO"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/barraizquierdaderechaarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/RebotesOfensivos"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/rebotesTotales"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/barraizquierdaderechaarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/RebotesTotales"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutAsist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/asist"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/barraizquierdaderechaarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/Asistencias"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutBR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/br"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/barraizquierdaderechaarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/BalonesRobados"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/perd"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/barraizquierdaderechaarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/BalonesPerdidos"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTRea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/treali"
+                        android:layout_width="27dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/barraizquierdaderechaarriba"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp"
+                        android:text="@string/TaponesCometidos"
+                        android:textColor="#ff000000"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tr"
+                        android:layout_width="27dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/barraizquierdaderechaarriba"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp"
+                        android:text="@string/TaponesRecibidos"
+                        android:textColor="#ff000000"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutFC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fc"
+                        android:layout_width="27dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/barraizquierdaderechaarriba"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp"
+                        android:text="@string/FaltasCometidas"
+                        android:textColor="#ff000000"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutFR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fr"
+                        android:layout_width="27dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bordefinalarriba"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp"
+                        android:text="@string/FaltasRecibidas"
+                        android:textColor="#ff000000"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/otrasEstadisticas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/resto"
+            android:layout_alignStart="@+id/resto"
+            android:layout_below="@+id/resto"
+            android:layout_gravity="right"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRebotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rebotesDefensivosText"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaabajoarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:typeface="serif" />
+
+
+                <TextView
+                    android:id="@+id/rebotesOfensivosText"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaabajoarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/rebotesTotalesText"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaabajoarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutAsistencias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/asistenciasText"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaabajoarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRecuperaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recuperacionesText"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaabajoarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutPerdidas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/perdidasText"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaabajoarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTapRealizados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:background="@drawable/bordeizquierdaabajoarriba"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/taponesRealizadosText"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaabajoarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutTapRecibidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/taponesRecibidosText"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaabajoarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFaltasCometidas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/faltasCometidasText"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordeizquierdaabajoarriba"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutFaltasRecibidas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/faltasRecibidasText"
+                    android:layout_width="27dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordefinalabajo"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="7dp"
+                    android:paddingTop="7dp"
+                    android:text="@string/cero"
+                    android:textColor="#ff000000"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/layoutNumeros"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/layoutNumeros"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/rebotesDefensivos"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:text="@string/BotonRebotesDefensivos"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/taponesRealizados"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:text="@string/BotonTaponesRealizados"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/faltasCometidas"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:text="@string/BotonFaltasCometidas"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+
+            <Button
+                android:id="@+id/recuperaciones"
+                android:layout_width="95dp"
+                android:layout_height="35dp"
+                android:text="@string/BotonBalonesRobados"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+
+            <!-- </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/linearLayout3y5"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignEnd="@+id/layoutNumeros"
+                 android:layout_alignRight="@+id/layoutNumeros"
+                 android:layout_alignTop="@+id/layoutDorsalNombre"
+                 android:gravity="center_horizontal"
+                 android:orientation="vertical">-->
+
+            <Button
+                android:id="@+id/rebotesOfensivos"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:text="@string/BotonRebotesOfensivos"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/taponesRecibidos"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:text="@string/BotonTaponesRecibidos"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+
+            <Button
+                android:id="@+id/faltasRecibidas"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:text="@string/BotonFaltasRecibidas"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/perdidas"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:text="@string/BotonBalonesPerdidos"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/asistencias"
+                android:layout_width="95dp"
+                android:layout_height="30dp"
+                android:text="@string/BotonAsistencias"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/alinearTiros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/cuadroTirosDe2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/alinearTiros"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/alinearTiros"
+                    android:layout_alignTop="@+id/layoutDorsalNombre"
+                    android:gravity="center"
+                    android:text="@string/TextoTirosDeDos"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+
+                <LinearLayout
+                    android:id="@+id/layoutAF2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/linearLayout1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/aciertoDe2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:contentDescription="v de acierto2"
+                        android:enabled="true"
+                        android:src="@mipmap/acierto"
+                        android:textSize="8sp" />
+
+                    <ImageButton
+                        android:id="@+id/falloDe2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:contentDescription="x fallo2"
+                        android:src="@mipmap/fallo"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cuadroTirosDe3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/alinearTiros"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/alinearTiros"
+                    android:layout_alignTop="@+id/layoutDorsalNombre"
+                    android:gravity="center"
+                    android:text="@string/TextoTirosDeTres"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <LinearLayout
+                    android:id="@+id/layoutAF3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/aciertoDe3"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:contentDescription="v acierto3"
+                        android:layout_alignBottom="@+id/falloDe3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:src="@mipmap/acierto"
+                        android:textSize="8sp" />
+
+                    <ImageButton
+                        android:id="@+id/falloDe3"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:contentDescription="x fallo3"
+                        android:layout_above="@+id/resto"
+                        android:layout_alignTop="@+id/linearLayout2"
+                        android:layout_toEndOf="@+id/aciertoDe2"
+                        android:layout_toLeftOf="@+id/linearLayout1"
+                        android:layout_toRightOf="@+id/aciertoDe2"
+                        android:src="@mipmap/fallo"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cuadroTextoTirosLibres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/alinearTiros"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/alinearTiros"
+                    android:layout_alignTop="@+id/layoutDorsalNombre"
+                    android:gravity="center"
+                    android:text="@string/TextoTirosLibres"
+                    android:textColor="#ff000000"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <LinearLayout
+                    android:id="@+id/layoutAF1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/resto"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/aciertoDe1"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:contentDescription="v acierto1"
+                        android:layout_alignBottom="@+id/falloDe1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignTop="@+id/otrasEstadisticas"
+                        android:src="@mipmap/acierto"
+                        android:textSize="8sp" />
+
+                    <ImageButton
+                        android:id="@+id/falloDe1"
+                        android:layout_width="45dp"
+                        android:contentDescription="x de fallo1"
+                        android:layout_height="45dp"
+                        android:layout_alignBottom="@+id/otrasEstadisticas"
+                        android:layout_toLeftOf="@+id/resto"
+                        android:layout_toRightOf="@+id/aciertoDe1"
+                        android:layout_toStartOf="@+id/resto"
+                        android:src="@mipmap/fallo"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutTextoValoracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/otrasEstadisticas"
+            android:layout_below="@+id/layoutValoracion"
+            android:background="@drawable/bordecuadrado"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/valoracionText"
+                android:layout_width="110sp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textoValoracion"
+                android:layout_alignStart="@+id/textoValoracion"
+                android:layout_below="@+id/layoutTextoPuntosTotales"
+                android:gravity="center_horizontal"
+                android:text="@string/cero"
+                android:textColor="#ff000000"
+                android:textSize="40sp"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutValoracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/otrasEstadisticas"
+            android:layout_alignRight="@+id/otrasEstadisticas"
+            android:layout_alignTop="@+id/layoutTextoPuntosTotales"
+            android:background="@drawable/bordefinalarriba"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textoValoracion"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout3y5"
+                android:layout_toLeftOf="@+id/linearLayout3"
+                android:layout_toStartOf="@+id/linearLayout3"
+                android:gravity="center_horizontal"
+                android:text="@string/TextoValoracion"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutpuntosAnotados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/otrasEstadisticas"
+            android:layout_below="@+id/layoutTextoPuntosTotales"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/puntosAnotados"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/otrasEstadisticas"
+                android:layout_alignStart="@+id/otrasEstadisticas"
+                android:layout_below="@+id/alinearTiros"
+                android:background="@drawable/bordecuadrado"
+                android:gravity="center_horizontal"
+                android:text="@string/cero"
+                android:textColor="#ff000000"
+                android:textSize="40sp"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTextoPuntosTotales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/otrasEstadisticas"
+            android:layout_alignStart="@+id/otrasEstadisticas"
+            android:layout_below="@+id/alinearTiros"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextoPuntosTotales"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layoutpuntosAnotados"
+                android:layout_alignLeft="@+id/layoutpuntosAnotados"
+                android:layout_alignStart="@+id/layoutpuntosAnotados"
+                android:background="@drawable/bordefinalarriba"
+                android:gravity="center_horizontal"
+                android:text="@string/PuntosTotales"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutNumeros"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BotonSalir_de_aplicacion"
+                android:id="@+id/salir"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gridView"
+            android:id="@+id/button"
+            android:onClick="pasarListview"
+            android:layout_gravity="right" />-->
+
+
+    </RelativeLayout>
+</ScrollView>
